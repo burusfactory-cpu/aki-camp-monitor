@@ -8,7 +8,13 @@ URL = "https://hillbilly-camping.com/reserve/?ym=202609"
 
 # ntfyのトピック名
 NTFY_TOPIC = os.getenv("NTFY_TOPIC")
+if not NTFY_TOPIC:
+    raise ValueError("NTFY_TOPIC is not set")
 
+requests.post(
+    f"https://ntfy.sh/{NTFY_TOPIC}",
+    data="空きキャン通知テスト成功！".encode("utf-8")
+)
 # 前回のページ状態を保存するファイル
 STATE_FILE = "last_state.txt"
 
