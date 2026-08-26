@@ -7,7 +7,7 @@ import os
 URL = "https://hillbilly-camping.com/reserve/?ym=202609"
 
 # ntfyのトピック名
-NTFY_TOPIC =hillbilly-camp
+NTFY_TOPIC = os.getenv("NTFY_TOPIC")
 
 # 前回のページ状態を保存するファイル
 STATE_FILE = "last_state.txt"
