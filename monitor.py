@@ -107,11 +107,13 @@ def get_page_text():
             " ",
             strip=True
         )
-print("TEST カレンダー9/1取得 =", "9/1" in text)
+
         if len(text) < 100:
             raise RuntimeError(
                 "取得したページ内容が短すぎます"
             )
+
+                print("TEST カレンダー9/1取得 =", "9/1" in text)
 
         return text
 
