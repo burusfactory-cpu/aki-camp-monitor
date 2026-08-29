@@ -80,7 +80,7 @@ def get_page_text():
 
     try:
 
-        response = session.get(
+        response = requests.get(
             URL,
             headers=headers,
             timeout=TIMEOUT
