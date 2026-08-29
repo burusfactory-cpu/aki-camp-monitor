@@ -12,7 +12,7 @@ from urllib3.util.retry import Retry
 # ==============================
 
 # ヒルビリーキャンピング監視ページ
-URL = "https://hillbilly-camping.com/"
+URL = "https://hillbilly-camping.com/reserve/"
 
 # ntfyトピック
 NTFY_TOPIC = os.getenv("NTFY_TOPIC")
