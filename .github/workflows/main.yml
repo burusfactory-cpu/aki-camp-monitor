@@ -20,7 +20,9 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install requests beautifulsoup4
+          pip install requests beautifulsoup4 playwright
+      - name: Install Playwright browser
+        run: playwright install chromium
       - name: Restore previous state
         uses: actions/cache@v4
         with:
