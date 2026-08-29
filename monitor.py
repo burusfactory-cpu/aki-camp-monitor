@@ -113,7 +113,7 @@ def get_page_text():
                 "取得したページ内容が短すぎます"
             )
 
-                print("TEST カレンダー9/1取得 =", "9/1" in text)
+        print("TEST カレンダー9/1取得 =", "9/1" in text)
 
         return text
 
