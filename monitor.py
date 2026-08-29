@@ -21,7 +21,7 @@ NTFY_TOPIC = os.getenv("NTFY_TOPIC")
 STATE_FILE = "last_state.txt"
 
 # 通信タイムアウト
-TIMEOUT = 30
+TIMEOUT = 10
 
 
 # ==============================
