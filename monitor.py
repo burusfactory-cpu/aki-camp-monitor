@@ -315,7 +315,7 @@ def send_notification(slots):
 
     message = "\n".join(lines)
 
-        try:
+    try:
         response = requests.post(
             "https://ntfy.sh/",
             json={
