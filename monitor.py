@@ -315,15 +315,16 @@ def send_notification(slots):
 
     message = "\n".join(lines)
 
-    try:
+        try:
         response = requests.post(
-            f"https://ntfy.sh/{NTFY_TOPIC}",
-            data=message.encode("utf-8"),
-            headers={
-                "Title":
-                    "ヒルビリーキャンピング 空き発生",
-                "Priority": "high",
-                "Tags": "camping"
+            "https://ntfy.sh/",
+            json={
+                "topic": NTFY_TOPIC,
+                "message": message,
+                "title": "ヒルビリーキャンピング 空き発生",
+                "priority": 4,
+                "tags": ["camping"],
+                "click": "https://hillbilly-camping.com/reserve/"
             },
             timeout=15
         )
